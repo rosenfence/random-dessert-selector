@@ -17,7 +17,7 @@ const Lottie = () => {
 
   return (
     <>
-      <div ref={container} style={{ width: '300px' }}></div>
+      <div ref={container} className="w-52"></div>
     </>
   );
 };
