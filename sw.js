@@ -1,4 +1,5 @@
 // sw.js
+// Service Worker 설정 코드
 
 // install event
 self.addEventListener('install', (e) => {

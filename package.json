@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "homepage": "https://rd-selector.netlify.app/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
