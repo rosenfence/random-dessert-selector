@@ -9,7 +9,7 @@ const Lottie = () => {
     lottie.loadAnimation({
       container: container.current,
       renderer: 'svg',
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: animation,
     });
@@ -17,7 +17,7 @@ const Lottie = () => {
 
   return (
     <>
-      <div ref={container} className="w-52"></div>
+      <div ref={container}></div>
     </>
   );
 };
