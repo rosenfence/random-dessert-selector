@@ -1,12 +1,13 @@
 import React from 'react';
+import { Header, Layout } from './components/common';
 import { Start } from './components';
 
 function App() {
   return (
-    <div className="App">
-      앱
+    <Layout>
+      <Header />
       <Start />
-    </div>
+    </Layout>
   );
 }
 
