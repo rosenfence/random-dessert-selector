@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-import animation from '../../lottie/cup.json';
+import cup from '../../lottie/cup.json';
 
-const Lottie = () => {
+const Lottie = ({ listIdx }) => {
   const container = useRef();
+  const list = [cup];
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -11,7 +12,7 @@ const Lottie = () => {
       renderer: 'svg',
       loop: false,
       autoplay: true,
-      animationData: animation,
+      animationData: list[listIdx],
     });
   }, []);
 

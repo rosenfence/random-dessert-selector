@@ -20,6 +20,7 @@ const App = () => {
     switch (type) {
       case 'gatcha':
         setResult(value);
+        console.log(value);
         break;
     }
     if (type !== 'reset') setStep(step + 1);
@@ -32,7 +33,7 @@ const App = () => {
       <main className="h-full flex flex-col">
         {step === 0 && <Start onChangeStep={handleChangeStep} />}
         {step === 1 && <Gatcha onChangeStep={handleChangeStep} />}
-        {step === 2 && <Result onChangeStep={handleChangeStep} />}
+        {step === 2 && <Result onChangeStep={handleChangeStep} result={result} />}
       </main>
     </Layout>
   );

@@ -5,13 +5,13 @@ const Start = ({ onChangeStep }) => {
   const handleClick = () => onChangeStep('start');
 
   return (
-    <div>
-      <div className="flex-center flex-1">
-        <Lottie className="w-[60%]" alt="시작" />
+    <>
+      <div className="flex-1 flex-center pb-[32px]">
+        <Lottie listIdx="0" className="w-[60%]" />
       </div>
-      <div className="text-center text-2xl">오늘의 식후 디저트로는 뭐가 좋을까?</div>
+      <div className="text-2xl text-center">오늘의 식후 디저트로는 뭐가 좋을까?</div>
       <Button onClick={handleClick}>시작하기</Button>
-    </div>
+    </>
   );
 };
 
