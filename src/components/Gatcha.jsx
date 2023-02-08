@@ -27,8 +27,8 @@ const Gatcha = ({ onChangeStep }) => {
   };
 
   useEffect(() => {
-    setInterval(() => changeImogi(), 200);
-  });
+    setInterval(() => changeImogi(), 100);
+  }, []);
 
   return (
     <>
