@@ -20,7 +20,6 @@ const App = () => {
     switch (type) {
       case 'gatcha':
         setResult(value);
-        console.log(value);
         break;
     }
     if (type !== 'reset') setStep(step + 1);

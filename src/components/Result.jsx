@@ -8,7 +8,7 @@ const Result = ({ onChangeStep, result }) => {
   return (
     <>
       <div className="flex-1 text-center text-2xl">
-        결과 페이지
+        결과
         <div>{result.icon}</div>
         <div>{result.name}</div>
       </div>
