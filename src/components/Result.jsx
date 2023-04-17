@@ -5,7 +5,9 @@ const Result = ({ onChangeStep, result }) => {
   const handleClick = () => onChangeStep('reset');
   const handleShare = async () => {
     try {
-      await navigator.clipboard.writeText(`${result.icon} 오늘 ${result.name} 먹자! - 무작위 디저트 선택자`);
+      await navigator.clipboard.writeText(
+        `${result.icon} 오늘 ${result.name} 먹자! - 무작위 디저트 선택기 :: https://rd-selector.netlify.app`
+      );
       alert('클립보드에 복사됐어요!');
     } catch (e) {
       alert('클립보드 복사가 실패했어요. 접근권한을 확인해주세요.');
