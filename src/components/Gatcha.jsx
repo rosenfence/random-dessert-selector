@@ -33,8 +33,8 @@ const Gatcha = ({ onChangeStep }) => {
   return (
     <>
       <div className="flex-center flex-1 flex-col">
-        <div className="flex-3 w-full text-9xl text-center">{randomImogi}</div>
-        <div className="flex-1 w-full text-5xl text-center">{randomName}</div>
+        <div className="flex-center h-[30%] w-full text-5xl text-center">{randomName}</div>
+        <div className="h-[70%] w-full text-[250px] text-center">{randomImogi}</div>
       </div>
       <Button onClick={handleClick}>골라줘!</Button>
     </>

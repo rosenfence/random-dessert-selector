@@ -15,9 +15,9 @@ const Result = ({ onChangeStep, result }) => {
   return (
     <>
       <div className="flex-1 text-center text-2xl">
-        결과
-        <div>{result.icon}</div>
-        <div>{result.name}</div>
+        <div className="flex-center h-[20%] text-[50px]">결과</div>
+        <div className="flex-center h-[30%] text-[200px] text-center">{result.icon}</div>
+        <div className="h-[50%] text-[40px] mt-9">{result.name}</div>
       </div>
       <Button onClick={handleShare}>같이볼래?</Button>
       <div className="pt-1">
